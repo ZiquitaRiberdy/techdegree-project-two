@@ -1,0 +1,211 @@
+/*Main Styles*/
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100vh;
+}
+img {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+p {
+    font-size: 3vh;
+    color:rgb(65, 65, 65);
+    padding-bottom: 5vh;
+}
+.main-image {
+  width: 95%;
+}
+a:link {
+    text-decoration: none;   
+}
+a:visited {
+    color: rgb(65, 65, 65)
+}
+
+
+/*Idividual Items*/
+header, footer {
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    padding: 14px;
+}
+header {
+    margin: auto;
+}
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+    color:rgb(65, 65, 65);
+}
+footer {
+    display: flex;
+    flex-direction:column ;
+    padding-top: 3vh;
+}
+.profile {
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.profile-img {
+    width: 50vw;
+}
+.main-nav {
+    list-style-type: none;
+    list-style-position: inside;
+    font-weight: bolder;
+    border: 5px solid ghostwhite;
+    padding:1.7vh;
+    margin: 1vh;
+    font-size: 25px;
+    color:rgb(65, 65, 65);
+    background-color: ghostwhite;  
+}
+h1, h2 {
+    padding-bottom: 3vh;
+}
+#portfolio {
+    margin-top: 7vh;
+    text-align: center;
+}
+#contact {
+    margin-top: 5.5vh;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding:1.7vh;
+    margin: 1vh;
+    color:grey;
+}
+.nav-two {
+    display: none;
+}
+
+
+/* Media Queries*/
+
+@media screen and (min-width: 768px) {
+    .main-nav {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        background-color: rgba(248, 248, 255, 0); 
+        border: 0;   
+    }
+    .profile {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        align-items:initial;
+        justify-content: space-between;
+        margin: 2vw;
+    }
+    .profile p {
+        padding-top: 47px;
+    }
+    .profile-img {
+        margin-left: 5vw;
+    }
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-div {
+        flex: 1;
+        justify-content: space-around;
+        min-width: 40vw;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    #contact {
+        display: flex;
+        text-align: center;
+        margin-left: 8vw;
+        max-width: 80vw; 
+    }
+    #profile-p {
+         font-size: 2.5vh;
+         text-align: left;
+    }
+    .nav {
+        display:none;
+    }
+    .nav-two {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        list-style-type: none;
+        padding:1.7vw;
+        color:grey;
+    }
+    .nav-two li {
+        margin-right: 40px;
+    }
+    #name {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .top-div {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .top-div li {
+         font-size: 1rem;
+    }
+    h1 {
+        margin-right: auto;
+        margin-left: 2vw;
+        font-size: 1.5rem;
+    }
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-left: 2.5vw solid rgb(243, 243, 243);
+        border-right: 2.5vw solid rgb(243, 243, 243);
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+    #portfolio {
+        border-left: 2.5vw solid rgb(243, 243, 243);
+        border-right: 2.5vw solid rgb(243, 243, 243);
+        border-top: 2.5vh solid rgb(243, 243, 243);
+        padding-top: 4vh;
+        margin-top: 0;
+    }
+    .main-div {
+        flex: 1;
+        justify-content: space-around;
+        min-width: 30vw;
+    }
+
+
+}
+
